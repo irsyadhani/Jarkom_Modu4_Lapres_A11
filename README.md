@@ -71,11 +71,13 @@ Routing dapat dilakukan pada menu Config > Routing > Static pada device Router d
 #
 #### 4. Testing
 Hasil testing
+
 ![alt text](/img/vlsm_14.png)
 
+###
 # CIDR
 
-## Tabel Subnetting
+## Topologi Subnet
 ![alt text](/img/A11_CIDR_fix.jpg)
 
 * B1: Gabungan subnet A1 dan A2
@@ -97,7 +99,11 @@ Hasil testing
 
 #
 ## Pembagian IP
+
+### Tabel Pembagian IP
 ![alt text](/img/A11_Tabel_Pembagian_IP.jpg)
+
+### Tree Pembagian IP
 ![alt text](/img/Pembagian_IP_CIDR.jpg)
 
 #
