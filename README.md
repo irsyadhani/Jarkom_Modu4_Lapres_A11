@@ -93,7 +93,7 @@ Hasil testing
 
 #
 ## Tree Subnet
-![alt text](/img/Tree_A11.jpg)
+![alt text](/img/A11_Tree.jpg)
 
 #
 ## Pembagian IP
