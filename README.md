@@ -4,10 +4,16 @@ Kelompok A11:
 * _Anggun Wahyuni (05111840000154)_
 
 ----------------------------------------------------------------
-# Tabel Subnetting
+## Soal
+* [VLSM](#vlsm)
+* [CIDR](#cidr)
+----------------------------------------------------------------
+# VLSM
+
+## Tabel Subnetting
 ![alt text](/img/tabel.png)
 
-# Cisco Packet Tracer dengan metode VLSM
+## Cisco Packet Tracer dengan metode VLSM
 
 ### Perhitungan Subnet
 
@@ -31,6 +37,7 @@ Kelompok A11:
 #### 1. Membuat topologi pada CPT
 ![alt text](/img/vlsm_6.png)
 
+#
 #### 2. Subnetting
 Mengatur IP untuk masing-masing interface yang ada di setiap device sesuai dengan pembagian subnet pada pohon VLSM dengan menu Config > Interface > "nama interface". Contoh untuk mengatur IP pada interface KEDIRI yang terhubung dengan subnet A2, A3 dan Server.
 
@@ -52,7 +59,7 @@ Atur IP pada SERVER MALANG yang mengarah ke KEDIRI dengan 10.151.73.102
 
 Lakukan hal yang sama untuk mengatur alamat IP setiap interface pada device yang ada dalam topologi.
 
-
+#
 #### 3. Routing
 Atur routing seperti tabel berikut
 
@@ -61,6 +68,37 @@ Atur routing seperti tabel berikut
 Routing dapat dilakukan pada menu Config > Routing > Static pada device Router dengan menambahkan NID (network), netmask (mask) dan gateway (next hop) lalu menekan tombol Add. Pada static routing juga dibutuhkan default routing agar router dapat mengirimkan paket sesuai tujuan. Default routing dibutuhkan untuk router yang berada di bawah router utama (SURABAYA). Sebagai contoh router KEDIRI hanya mengenal A2, A3 dan server MALANG sehingga harus dikenalkan dengan subnet A1 dan juga dilakukan default routing
 ![alt text](/img/vlsm_13.png)
 
+#
 #### 4. Testing
 Hasil testing
 ![alt text](/img/vlsm_14.png)
+
+# CIDR
+
+## Tabel Subnetting
+![alt text](/img/A11_CIDR_fix.jpg)
+
+* B1: Gabungan subnet A1 dan A2
+* B2: Gabungan subnet A6 dan A5
+* B3: Gabungan subnet A12 dan A13
+* C1: Gabungan subnet B1 dan A3
+* C2: Gabungan subnet B2 dan A4
+* C3: Gabungan subnet B3 dan A11
+* D1: Gabungan subnet C1 dan C2
+* D2: Gabungan subnet C3 dan A10
+* E1: Gabungan subnet D1 dan A7
+* E2: Gabungan subnet D1 dan A9
+* F1: Gabungan subnet E1 dan A8
+* G1: Gabungan subnet F1 dan E2
+
+#
+## Tree Subnet
+![alt text](/img/Tree_A11.jpg)
+
+#
+## Pembagian IP
+![alt text](/img/A11_Tabel_Pembagian_IP.jpg)
+![alt text](/img/Pembagian_IP_CIDR.jpg)
+
+#
+## UML dengan metode CIDR
