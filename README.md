@@ -181,6 +181,7 @@ uml_mconsole TULUNGAGUNG halt
 ```
 * Uncomment ipv4forward pada setiap router di `nano /etc/sysctl.conf`
 * Seperti contoh di Router Surabaya:
+
 ![alt text](/img/uncomment_surabaya.jpg)
 ##
 * Penambahan setting network interface untuk setiap UML dengan mengetikkan `nano /etc/network/interfaces`
